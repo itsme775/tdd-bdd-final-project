@@ -95,17 +95,8 @@ def create_products():
 
 
 ######################################################################
-# L I S T   A L L   P R O D U C T S
-######################################################################
-
-#
-# PLACE YOUR CODE TO LIST ALL PRODUCTS HERE
-#
-
-######################################################################
 # R E A D   A   P R O D U C T
 ######################################################################
-
 @app.route("/products/<int:product_id>", methods=["GET"])
 def get_products(product_id):
     """ Retrieve a single product
@@ -153,6 +144,7 @@ def delete_products(product_id):
     if product:
         product.delete()
     return "", status.HTTP_204_NO_CONTENT
+
 
 ######################################################################
 # L I S T   P R O D U C T S

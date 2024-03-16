@@ -214,7 +214,7 @@ class TestProductModel(unittest.TestCase):
 #        """It should not Update a product with invalid ID"""
 #        product = ProductFactory()
 #        product.id = None
-#        self.assertRaises(DataValidationError, product.update)        
+#        self.assertRaises(DataValidationError, product.update)
 
 #    def test_find_by_price_with_invalid_price(self):
 #        """It should return empty list for invalid price"""
